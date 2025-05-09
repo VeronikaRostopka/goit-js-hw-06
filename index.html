@@ -7,16 +7,22 @@
 </head>
 <body>
   <h1>Домашнє завдання №6</h1>
-  <ul>
-    <li>Завдання 1: Акаунт користувача</li>
-    <li>Завдання 2: Склад</li>
-    <li>Завдання 3: Конструктор рядків</li>
-  </ul>
   
-  <p>Відкрийте консоль розробника (F12) для перегляду результатів.</p>
+  <script>
+    // Додавання скриптів через JavaScript
+    function addScript(src) {
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = false;
+      document.body.appendChild(script);
+    }
+    
+    // Послідовне додавання скриптів
+    addScript('./js/task-1.js');
+    addScript('./js/task-2.js');
+    addScript('./js/task-3.js');
+  </script>
   
-  <script src="js/task-1.js"></script>
-  <script src="js/task-2.js"></script>
-  <script src="js/task-3.js"></script>
+  <p>Відкрийте консоль для перегляду результатів (F12).</p>
 </body>
 </html>
